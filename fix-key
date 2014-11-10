@@ -1,0 +1,9 @@
+#!/usr/bin/python
+
+import os
+import sys
+
+#os.system('sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys')
+keys = ' '.join(sys.argv[1:])
+os.system('sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys  '+keys)
+print 'done'
