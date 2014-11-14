@@ -1,3 +1,0 @@
-#/usr/bin/sh
-sudo arpspoof -i wlan0 192.168.5.1
-
