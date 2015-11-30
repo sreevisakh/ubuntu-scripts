@@ -1,0 +1,11 @@
+#!/usr/bin/node
+
+var https = require('https');
+var fs = require('fs');
+
+var file = fs.createWriteStream("/home/sv/.config/sublime-text-3/Packages/User/Package Control.sublime-package");
+var request = https.get("https://packagecontrol.io/Package%20Control.sublime-package", function(response) {
+  response.pipe(file);
+});	
+
+console.log('Installed Package Control For Sublime. Restart Sublime to activate')

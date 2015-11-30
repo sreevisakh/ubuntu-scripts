@@ -1,0 +1,15 @@
+#!/usr/bin/node
+
+var fs = require('fs')
+var file = '/home/sv/.bashrc'
+fs.readFile(file, 'utf8', function (err,data) {
+  if (err) {
+    return console.log(err);
+  }
+  var result = data.replace(/#force_color_prompt=yes/g, 'force_color_prompt=yes');
+
+  fs.writeFile(file, result, 'utf8', function (err) {
+     if (err) return console.log(err);
+  });
+});
+console.log('Enabled Color For your Terminal');
