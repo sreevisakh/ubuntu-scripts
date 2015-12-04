@@ -2,7 +2,3 @@ curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
 sudo apt-get install -y nodejs
 echo 'Node Installed version : '
 node -v
-
-echo "Instaling Necessary Node Packages"
-sudo npm i -g grunt grunt-cli bower pm2
-
