@@ -30,11 +30,11 @@ sudo apt-get update
 
 
 echo "Installing Apps"
-sudo apt-get -y install google-chrome-stable sublime-text-installer git apache2 scudcloud nodejs vlc
+sudo apt-get -y install google-chrome-stable nodejs sublime-text-installer git apache2  scudcloud nodejs vlc
 
 sublime-text-installer
 
-sudo apt-get -y install php5 gnome-tweak-tool qbittorrent gnome-shell 
+sudo apt-get -y install php5 gnome-tweak-tool qbittorrent gnome-shell
 
 sudo apt-get -y install polari gnome-music gnome-photos gnome-maps gnome-weather epiphany-browser
 
