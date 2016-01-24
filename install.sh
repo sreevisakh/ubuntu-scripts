@@ -42,6 +42,6 @@ sudo apt-get -y install unace unrar zip unzip p7zip-full p7zip-rar sharutils rar
 
 sudo apt-get -y purge  openjdk*
 
-sudo apt-get -y install oracle-java8-installer telegram bleachbit variety timeshift 
+sudo apt-get -y install oracle-java8-installer telegram bleachbit variety timeshift php5-curl
 
 

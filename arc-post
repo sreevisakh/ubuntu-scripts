@@ -1,0 +1,17 @@
+cd $HOME
+. .profile
+arc upgrade
+arc set-config default https://ben10.ailiens.com
+arc set-config https.blindly-trust-domains '["ben10.ailiens.com"]'
+arc install-certificate
+
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
+
+mkdir -p $HOME/projects
+cd $HOME/projects
+
+git clone -c http.sslVerify=false https://ben10.ailiens.com/diffusion/ODIN/odin.git
+git clone -c http.sslVerify=false https://ben10.ailiens.com/diffusion/MYSTIQUE/mystique.git
+git clone -c http.sslVerify=false https://ben10.ailiens.com/diffusion/RAVEN/techpack.git
+
