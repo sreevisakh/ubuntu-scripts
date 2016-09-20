@@ -20,6 +20,13 @@ sudo apt-add-repository -y ppa:teejee2008/ppa
 echo "Slack"
 sudo apt-add-repository -y ppa:rael-gc/scudcloud
 
+echo "Spotify"
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+
+echo "Atom"
+sudo add-apt-repository -y ppa:webupd8team/atom 
+
 echo "Updating source List"
 sudo apt-get update
 
@@ -29,7 +36,7 @@ sudo apt-get -y install google-chrome-stable sublime-text-installer git apache2 
 
 sublime-text-installer
 
-sudo apt-get -y install php gnome-tweak-tool qbittorrent gnome-shell 
+sudo apt-get -y install php gnome-tweak-tool qbittorrent gnome-shell spotify atom git-cola build-essential 
 
 sudo apt-get -y install zip unzip 
 
